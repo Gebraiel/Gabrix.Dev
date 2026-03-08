@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1c1b21;
+  --background:#1c1b21;
   --buttons-bg:#27272c;
   --secondary-color:#00ff99;
 }
@@ -48,3 +48,58 @@ body{
   opacity:1;
   z-index:1;
 }
+.stroke-text{
+  -webkit-text-stroke: 1px rgba(255,255,255,0.7);
+   color:transparent;
+  text-stroke:1px rgba(255,255,255,0.7);
+  transition: 0.3s;
+
+}
+.service:hover .stroke-text{
+    -webkit-text-stroke: 1px var(--secondary-color);
+    text-stroke:1px var(--secondary);
+}
+.typing-text{
+    position: relative;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides any overflow from longer text */
+    letter-spacing: 1px;
+    border-right:5px solid transparent;
+    animation: flashing 0.5s steps(8) infinite;
+
+}
+
+/* .typing-text::before{
+    content:"";
+    position: absolute;
+    left:0%;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    animation: typing 6s steps(14) infinite  ,flashing 0.5s steps(8) infinite;
+    border-left:5px solid transparent;
+} */
+/* @keyframes typing {
+    0%{
+        left:0%;
+    }
+    50% ,90%{
+        left:100%;
+    }
+
+    100%{
+        left:0%;
+    }
+} */
+@keyframes flashing {
+
+    50%{
+        border-color:var(--primary-color);
+    }
+    100%{
+        border-color: transparent;
+    }
+
+}
+

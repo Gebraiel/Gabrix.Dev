@@ -6,7 +6,7 @@ import Logo from './Logo'
 export default function Header() {
  
   return (
-    <header>
+    <header className='z-1 relative'>
         <div className="container">
             <div className="flex justify-between items-center">
                 <Logo/>

@@ -14,7 +14,7 @@ export default function Avatar() {
                   </motion.svg>
                 </div>
                 <div className="relative w-[80%] aspect-square">                
-                  <Image src="/gebraiel.png" alt="Gebraiel Malak Photo" className="object-contain object-top -translate-y-10" fill/>
+                  <Image src="/gebraiel-circular.png" alt="Gebraiel Malak Photo" className="object-cover object-top " fill/>
 
                 </div>
     </motion.div>
