@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jetBrains.variable} font-jetbrains-mono grid grid-rows-[auto_1fr] min-h-screen`}
+        className={`${jetBrains.variable} font-jetbrains-mono flex flex-col min-h-screen`}
       >
         <Header/>
         <PageTransition>

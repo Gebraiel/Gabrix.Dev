@@ -4,7 +4,7 @@ import Contacts from '../Components/Contacts'
 
 export default function Contact() {
   return (
-    <main className="flex justify-center items-start h-full  z-1 relative">
+    <main className="flex justify-center items-start h-full  ">
         <div className="container">
             <div className='grid md:grid-cols-2 grid-cols-1 gap-20'>
                 <Form/>
