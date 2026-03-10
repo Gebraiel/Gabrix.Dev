@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import Logo from './Logo'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
@@ -30,7 +30,9 @@ const menu=[
 export default function Nav() {
     const[isActive,setIsActive]=useState(false)
     const path = usePathname();
-    console.log(path)
+    useEffect(()=>{
+        setIsActive(false)
+    },[path])
     return (
         <>
             <button onClick={()=>setIsActive(true)} className='burger-button lg:hidden block w-5 h-5  relative group cursor-pointer'>
