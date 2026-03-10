@@ -14,8 +14,8 @@ const menu=[
         link:"/services"
     },
     {
-        title:"Resume",
-        link:"/resume"
+        title:"My Journey",
+        link:"/journey"
     },
     {
         title:"Work",

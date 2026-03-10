@@ -68,7 +68,7 @@ export default function SkillsTab() {
   return (
     <div>
         <motion.strong variants={fadeinVarient} initial="hidden" animate="visible" exit="hidden" className='text-secondary text-3xl' >My Skills</motion.strong>
-        <motion.p variants={fadeinVarient} initial="hidden" animate="visible" exit="hidden" className='text-white my-4 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni dolorem, delectus atque repellat nemo nesciunt odio iure voluptate id quidem mollitia excepturi repellendus minus a accusantium magnam in ab?</motion.p> 
+        <motion.p variants={fadeinVarient} initial="hidden" animate="visible" exit="hidden" className='text-white my-4 '>Through this journey, I first built a strong foundation in programming by learning the fundamentals of computer science during my studies at university. Over time, my focus shifted toward frontend development, where I started learning HTML, CSS, and JavaScript. Toward the end of my studies, I expanded my skills by working with modern technologies like React, Bootstrap, Tailwind CSS, and later tools and libraries such as GSAP, Framer Motion, Axios, Redux Toolkit, React Hook Form, and Next.js.</motion.p> 
         <motion.div variants={parentVarient} initial="hidden" animate="visible" exit="hidden" className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-4  gap-5'>
             {skills.map((skill)=>
                 <motion.div key={skill.label} variants={fadeinVarient}  className='skill relative bg-secondaryBg p-5 text-white duration-300 md:text-5xl sm:text-6xl text-4xl  flex justify-center rounded-2xl aspect-square items-center' key={skill.label}>

@@ -5,6 +5,7 @@ import { FaDownload } from "react-icons/fa";
 import Avatar from "./Components/Avatar";
 import TypingText from "./Components/TypingText";
 import { FaEnvelope } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 const social = [
   {
@@ -32,7 +33,7 @@ export default function Home() {
 Gabrix.Dev isn’t just a brand. <strong className="text-secondary font-black">It’s where digital dreams come to life.</strong>
                 </p>
                 <div className="flex sm:justify-start justify-center gap-6 items-center mt-10">
-                  <Link href="" className=" flex  gap-2  items-center px-5 py-3 border border-secondary text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Download CV <FaDownload/> </Link>
+                  <Link href="/journey" className=" flex  gap-2  items-center px-5 py-3 border border-secondary text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Explore My Journey <FaArrowRight/> </Link>
                   <Link href="/contact" className=" flex  gap-2  items-center px-5 py-3 border border-secondary text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Contact<FaEnvelope/> </Link>
                   
                 </div>
