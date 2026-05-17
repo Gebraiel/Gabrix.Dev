@@ -39,7 +39,7 @@ export default function Nav() {
                         <div className='w-1/2 h-0.5 bg-secondary absolute top-1/2 right-0 -translate-y-1/2 group-hover:w-full duration-300'></div>
             </button>
             <nav className='lg:block hidden'>
-                <ul className="flex gap-5" >
+                <ul className="flex gap-5 font-pixel" >
                     {
                         menu.map((item)=>{
                             return(
@@ -55,7 +55,7 @@ export default function Nav() {
                         isActive && 
                         <motion.nav initial={{x:"100%"}} animate={{x:0}} exit={{x:"100%"}} className='absolute left-0 top-0 w-screen h-screen after:contents-[""] after:block  after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-[rgba(0,0,0,0.3)] z-2'>
                             <button className='text-white absolute right-5 top-5 z-4' onClick={()=>setIsActive(false)}>X</button>
-                            <ul className="flex flex-col items-center justify-center absolute right-0 w-1/2 h-full bg-background  text-white gap-5 z-3">
+                            <ul className="flex flex-col font-pixel items-center justify-center absolute right-0 w-1/2 h-full bg-background  text-white gap-5 z-3">
                                 <li className='mb-20'><Logo/></li>
                             
                             {

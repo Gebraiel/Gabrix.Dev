@@ -10,8 +10,8 @@ export default function WorkItem({project}) {
     <div className='grid md:grid-cols-2 grid-cols-1 gap-5'> 
         <div>
             <div className='flex flex-col gap-5'>
-                <span className='stroke-text text-6xl'>{`${id < 10 ? "0":""}${id}`} </span>
-                <b className='text-white text-2xl'>{name}</b>
+                <span className='font-pixel stroke-text text-6xl'>{`${id < 10 ? "0":""}${id}`} </span>
+                <b className='text-white text-2xl font-pixel'>{name}</b>
                 <p className='text-white/60'>{description}</p>
                 <ul className='flex gap-2'>
                     {

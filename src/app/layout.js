@@ -2,11 +2,26 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header";
 import PageTransition from "./Components/PageTransition";
+import localFont from 'next/font/local'
 
 const jetBrains = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
+const pixelFont = localFont({
+  src:[
+    {
+      path:"./fonts/pixelfont-regular.ttf",
+      weight:'400',
+      style:'normal'
+    },{
+      path:"./fonts/pixelfont-bold.ttf",
+      weight:'700',
+      style:'normal'
+    }
+  ],
+  variable:"--font-pixel"
+})
 
 export const metadata = {
   title: "Gabrix.Dev",
@@ -17,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jetBrains.variable} font-jetbrains-mono flex flex-col min-h-screen`}
+        className={`${jetBrains.variable} ${pixelFont.variable} font-jetbrains-mono flex flex-col min-h-screen`}
       >
         <Header/>
         <PageTransition>

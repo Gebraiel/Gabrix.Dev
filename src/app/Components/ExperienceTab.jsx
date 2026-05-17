@@ -49,7 +49,7 @@ const parentVarient = {
 export default function ExperienceTab() {
   return (
     <div>
-        <motion.strong variants={fadeinVarient} initial="hidden" animate="visible" exit="hidden" className='text-secondary text-3xl' >My Experience</motion.strong>
+        <motion.strong variants={fadeinVarient} initial="hidden" animate="visible" exit="hidden" className='font-pixel text-secondary text-3xl' >My Experience</motion.strong>
         <motion.p variants={fadeinVarient} initial="hidden" animate="visible" exit="hidden" className='text-white mt-4 '>While studying at university, I wanted to share what I was learning, so I started working as a Code Instructor at Engineeius, teaching students the fundamentals of programming and helping them take their first steps into coding. This experience helped me strengthen my own understanding of programming concepts and improve my problem-solving skills. Later, I worked as a Frontend Developer at RASANS, where I contributed to building responsive user interfaces and modern web experiences for real-world projects.</motion.p> 
         <motion.div variants={parentVarient} initial="hidden" animate="visible" exit="hidden" className='flex flex-col gap-5 mt-4 '>
             {experiences.map((experience)=>

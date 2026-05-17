@@ -34,9 +34,9 @@ const parentVarient = {
   const {activeTab,setActiveTab} = useContext(TabsContext)
   return (
     <div className='md:max-w-md w-full'>
-        <motion.h1 variants={fadeinVarient} initial="hidden" animate="visible" className='text-white text-3xl font-bold mb-3' >Journey as a Developer </motion.h1>
+        <motion.h1 variants={fadeinVarient} initial="hidden" animate="visible" className='font-pixel text-white text-3xl font-bold mb-3' >Journey as a Developer </motion.h1>
         <motion.div variants={parentVarient} initial="hidden" animate="visible" className='space-y-5 my-10'>
-            {tabs.map((tab,index)=><motion.button variants={fadeinVarient} key={index} onClick={()=>setActiveTab(index)} className={`w-full py-5  rounded-2xl  text-sm cursor-pointer ${activeTab == index ? 'bg-secondary text-background' : 'bg-secondaryBg text-white hover:bg-secondary hover:text-background duration-300 '}`}>{tab}</motion.button>)}
+            {tabs.map((tab,index)=><motion.button variants={fadeinVarient} key={index} onClick={()=>setActiveTab(index)} className={`w-full py-5  rounded-2xl  font-pixel text-sm cursor-pointer ${activeTab == index ? 'bg-secondary text-background' : 'bg-secondaryBg text-white hover:bg-secondary hover:text-background duration-300 '}`}>{tab}</motion.button>)}
         </motion.div>
     </div>
   )

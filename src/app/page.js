@@ -23,7 +23,7 @@ export default function Home() {
             <div className="flex sm:flex-row flex-col-reverse gap-5 items-center justify-between">
               <div className="sm:w-1/2 text-center sm:text-left w-full text-white max-w-lg overflow-x-hidden">
                 <small>Frontend Developer</small>
-                <h1 className="md:text-5xl sm:text-4xl text-3xl font-bold mb-5 mt-2 leading-tight">
+                <h1 className="md:text-5xl sm:text-4xl text-3xl font-bold mb-5 mt-2 leading-tight font-pixel ">
                   Hello I'm<br/>
                   {/* <span className="text-secondary typing-text">Gebraiel Malak</span> */}
                   <TypingText words={["Gebraiel Malak","Gabrix.Dev"]}/>
@@ -33,8 +33,8 @@ export default function Home() {
 Gabrix.Dev isn’t just a brand. <strong className="text-secondary font-black">It’s where digital dreams come to life.</strong>
                 </p>
                 <div className="flex sm:justify-start justify-center gap-6 items-center mt-10">
-                  <Link href="/journey" className=" flex  gap-2  items-center px-5 py-3 border border-secondary text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Explore My Journey <FaArrowRight/> </Link>
-                  <Link href="/contact" className=" flex  gap-2  items-center px-5 py-3 border border-secondary text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Contact<FaEnvelope/> </Link>
+                  <Link href="/journey" className=" flex  gap-2  items-center px-5 py-3 border border-secondary font-pixel text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Explore My Journey <FaArrowRight/> </Link>
+                  <Link href="/contact" className=" flex  gap-2  items-center px-5 py-3 border border-secondary font-pixel text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Contact<FaEnvelope/> </Link>
                   
                 </div>
               </div>

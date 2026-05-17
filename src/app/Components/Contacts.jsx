@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
-import { FaGithub, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
 const contacts=[
@@ -18,8 +18,12 @@ const contacts=[
 ]
 const social = [
   {
-    icon:<FaGithub/>,
-    link:"https://github.com/Gebraiel"
+    icon:<FaFacebook/>,
+    link:"https://facebook.com/gabrix.dev"
+  },
+  {
+    icon:<FaInstagram/>,
+    link:"https://instagram.com/gabrix.dev"
   },{
      icon:<FaLinkedinIn/>,
     link:"https://www.linkedin.com/in/gebraiel-malak/"
@@ -36,7 +40,7 @@ export default function Contacts() {
                         {contact.icon}
                     </div>
                     <div className='flex flex-col gap-2'>
-                        <span className='text-xs text-white/50'>{contact.name}</span>
+                        <span className='text-xs text-white/50 font-pixel font-bold'>{contact.name}</span>
                         <span className='sm text-white'>{contact.contact}</span>
                     </div>
                 </div>

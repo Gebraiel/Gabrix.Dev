@@ -17,7 +17,8 @@
   --color-background: var(--background);
   --color-secondary:var(--secondary-color);
   --color-secondaryBg:var(--buttons-bg);
-  --font-jetbrains-mono:var(--font-jetbrains-mono)
+  --font-jetbrains-mono:var(--font-jetbrains-mono);
+  --font-pixel:var(--font-pixel);
 }
 
 body{
