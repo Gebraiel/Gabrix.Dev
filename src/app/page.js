@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaDownload } from "react-icons/fa";
 import Avatar from "./Components/Avatar";
 import TypingText from "./Components/TypingText";
 import { FaEnvelope } from "react-icons/fa";
@@ -25,23 +24,20 @@ export default function Home() {
                 <small>Frontend Developer</small>
                 <h1 className="md:text-5xl sm:text-4xl text-3xl font-bold mb-5 mt-2 leading-tight font-pixel ">
                   Hello I'm<br/>
-                  {/* <span className="text-secondary typing-text">Gebraiel Malak</span> */}
                   <TypingText words={["Gebraiel Malak","Gabrix.Dev"]}/>
                 </h1>
                 <p className="leading-loose text-white/80">
-                  A Frontend Developer crafting modern and responsive web experiences.
-Gabrix.Dev isn’t just a brand. <strong className="text-secondary font-black">It’s where digital dreams come to life.</strong>
+                  A Frontend Developer crafting modern and responsive web experiences. Gabrix.Dev isn’t just a brand. <strong className="text-secondary font-black">It’s where digital dreams come to life.</strong>
                 </p>
                 <div className="flex sm:justify-start justify-center gap-6 items-center mt-10">
                   <Link href="/journey" className=" flex  gap-2  items-center px-5 py-3 border border-secondary font-pixel text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Explore My Journey <FaArrowRight/> </Link>
                   <Link href="/contact" className=" flex  gap-2  items-center px-5 py-3 border border-secondary font-pixel text-secondary rounded-4xl pointer-cursor hover:bg-secondary hover:text-background duration-300"> Contact<FaEnvelope/> </Link>
-                  
                 </div>
               </div>
               <Avatar/>
             </div>
-            
+
           </div>
-      </main> 
+      </main>
   );
 }

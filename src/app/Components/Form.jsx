@@ -14,7 +14,7 @@ export default function Form() {
   const onSubmit = async (data) => {
     setIsSending(true)
     console.log(data);
-    
+
 
     const response = await fetch("https://api.web3forms.com/submit", {
   method: "POST",
@@ -63,7 +63,7 @@ export default function Form() {
                 },
               })}
             />
-            
+
           </div>
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">
@@ -87,7 +87,6 @@ export default function Form() {
                 },
               })}
             />
-          
           </div>
           {errors.email && (
               <p className="text-red-500 text-sm mt-1">
@@ -120,7 +119,7 @@ export default function Form() {
                 SEO Optimization
               </option>
             </select>
-           
+
           </div>
            {errors.service && (
               <p className="text-red-500 text-sm mt-1">
@@ -137,10 +136,10 @@ export default function Form() {
               className="w-full focus:outline-none"
               {...register("phone", {
                 required: "Phone is required"
-               
+
               })}
             />
-           
+
           </div>
           {errors.phone && (
               <p className="text-red-500 text-sm mt-1">
@@ -155,7 +154,7 @@ export default function Form() {
               className="resize-none w-full focus:outline-none"
               {...register("message")}
             />
-            
+
           </div>
         </div>
 
