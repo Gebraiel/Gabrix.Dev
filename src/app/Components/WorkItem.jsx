@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 export default function WorkItem({project}) {
   const {id,name,description,skills,demo,image} = project;
   return (
-    <div className='grid md:grid-cols-2 grid-cols-1 gap-5'> 
+    <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
         <div>
             <div className='flex flex-col gap-5'>
                 <span className='font-pixel stroke-text text-6xl'>{`${id < 10 ? "0":""}${id}`} </span>
@@ -29,11 +29,11 @@ export default function WorkItem({project}) {
             </ul>
         </div>
         <div className="flex flex-col items-end gap-5">
-            <div className='relative aspect-video w-full '> 
-                <Image src={image} fill className="object-contain object-top" alt={name}/>
+            <div className='relative aspect-video w-full '>
+                <Image src={image} fill className="object-cover object-top" alt={name}/>
             </div>
 
-           
+
         </div>
     </div>
   )
